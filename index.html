@@ -37,14 +37,6 @@
             <!-- Header area -->
             <div class="jumbotron jumbotron-fluid header">
                 <div class="container">
-                    <!-- <h1 class="display-5">
-                        <i class="fa fa-meh-o" aria-hidden="true"></i>
-                        <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
-                        <i class="fa fa-frown-o" aria-hidden="true"></i>
-                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                        <i class="fa fa-smile-o" aria-hidden="true"></i>
-                        <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
-                    </h1> -->
                     <h1 class="title"><strong> NBA Giphy Search </strong></h1>
                     <p class="p1">What it do baby!!! Search your favorite NBA Player and look at the cool gifs that came up.</p>
                 </div>
@@ -52,12 +44,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 button-display">
+                    <div id="nba-button"></div>
                     </div>
                     <div class="col-12 form-display">
                         <form class="sarea">
-                            <label class="sr-only" for="inlineFormInput">search for new GIPHY's</label>
+                            <label class="sr-only" for="NBAInput">search for new GIPHY's</label>
                             <input type="text" id="new-gifs" placeholder="add nba player">
-                            <button id="add-b" type="submit" class="btn btn-success add-button">Add</button>
+                            <button onclick="submitButtonClicked()" id="add-b" type="submit"  class="btn btn-success add-button">Add</button>
                         </form>
                     </div>
                     <div class="col-12">
