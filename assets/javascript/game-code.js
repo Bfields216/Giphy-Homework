@@ -222,4 +222,4 @@ $(document).ready(function() {
     renderButtons();
 
 
-}); //PAGE CLOSING BRACKET
+}); 
