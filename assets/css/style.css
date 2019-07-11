@@ -5,7 +5,18 @@
 }
 .p1{
     padding: 24px;
+    margin-left: 183px;
 }
 .search-area{
     margin-left: 350px;
+}
+.sarea{
+    padding: 20px;
+    margin-left: 350px;
+}
+.wrapper{
+    background: #8c0101;
+}
+.container{
+    margin-left: 136px;
 }
