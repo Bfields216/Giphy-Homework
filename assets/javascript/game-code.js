@@ -15,17 +15,20 @@ $(document).ready(function () {
 
     buttonDisplay()
     function buttonDisplay() {
+        //created for loop that goes thru the nba players listed to search
         for (var i = 0; i < nbaplayers.length; i++) {
             $("#nba-button").append("<button type='button' class='btn btn-primary' value=' " + nbaplayers[i] + "'> " + nbaplayers[i] + " </button>");
             // event.preventDefult();
         }
+        //document on click searches the URL for the user input or nba player listed
         $(document).on("click", 'button', function () {
             var gifName = $(this).attr("value");
             console.log(gifName);
             searchGif();
             // event.preventDefult(); 
+            //apikey to search Giphy URL
             var apikey = "9iyLviGDMo6fB51jmQuzh8TYylX2LGFQ";
-            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +$(this).html() + "&api_key=" + apikey + "&limit=10";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + $(this).html() + "&api_key=" + apikey + "&limit=10";
             console.log(queryURL)
 
 
@@ -71,6 +74,7 @@ $(document).ready(function () {
             // renderButtons();
         });
     }
+    // event.preventDefault();
 
     function searchGif() {
         var nplayers = $(this).attr("data-name");
@@ -81,10 +85,12 @@ $(document).ready(function () {
         else {
             p = $("#add-gifs").val();
         }
+        event.preventDefault();
 
 
-    
     };
+    
+
 
 
 });
