@@ -1,19 +1,20 @@
 .title{
     margin-left: 350px;
-    color: #8c0101;
+    color: #777777;
     /* border: solid; */
 }
 .p1{
     padding: 24px;
-    margin-left: 183px;
+    margin-left: 50px;
+    font-size: 25px;
 }
-.search-area{
+/* .search-area{
     margin-left: 350px;
-}
-.sarea{
+} */
+/* .sarea{
     padding: 20px;
     margin-left: 350px;
-}
+} */
 .wrapper{
     background: #8c0101;
 }
